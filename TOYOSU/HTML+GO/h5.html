@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<form method="post" action="http://localhost:9090/LoginCheck"> 
+
+	<!--https://www.jmjc.tech/t-1/89 -->
+	
+	<table border="1">
+	  <tr>
+	    <th>商品名称</th>
+	    <td> 
+			<select name="city" >
+
+                 <option value="beijing" selected>北京</option>
+                 <option value="tianjin">天津</option>
+                 <option value="hebei">河北</option>
+   
+             </select>
+	    
+	    </td>
+	  </tr>
+	  
+	  <tr>
+	    <th>Fruit</th>
+	    <td> 
+			<input type="checkbox" name="passtime[]" value="Watching TV">Watching TV
+			<input type="checkbox" name="passtime[]" value="Hiking">Hiking
+			<input type="checkbox" name="passtime[]" value="Surfing the Net">Surfing the net
+	    </td>
+	  </tr>
+	  <tr>
+	    <th>password</th>
+	    <td> 
+			<input type="password" name="password" />
+	    </td>
+	  </tr> 
+	  <tr>
+	    <th>radio</th>
+	    <td> 
+			one <input type="radio" name="num" value="1">  
+			two <input type="radio" name="num" value="2">
+	    </td>
+	  </tr> 
+	  <tr>
+	    <td>単価</td>
+	    <td> <input type="text" name="danjia" required /></td>
+	  </tr>
+	  <tr>
+	    <td>数量</td>
+	    <td> <input type="text" name="shuliang" /></td>
+	  </tr>
+	  <tr>
+	    <td>合計</td>
+	    <td> <input type="text" name="zonge" /></td>
+	  </tr>
+	  
+	  
+	</table>
+	
+	<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
