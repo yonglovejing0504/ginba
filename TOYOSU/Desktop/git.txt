@@ -1,0 +1,131 @@
+１．GIT CLONE
+git clone -b master_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+git clone -b master_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebService/second_ws.git
+git clone -b master_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondManagement/second_mst.git
+
+git clone -b DEV_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+git clone -b DEV_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebService/second_ws.git
+git clone -b DEV_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondManagement/second_mst.git
+
+git clone -b STG_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+git clone -b STG_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebService/second_ws.git
+git clone -b STG_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondManagement/second_mst.git
+
+git clone -b master_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondBatch/secondbatchapp.git
+
+
+
+git clone https://github.iqa.smfl.co.jp/Org-SecondWebApp/secondwebapp.git
+git clone https://github.iqa.smfl.co.jp/Org-SecondWebService/second_ws.git
+git clone https://github.iqa.smfl.co.jp/Org-SecondManagement/second_mst.git
+
+git checkout DEV_Olympia
+git checkout STG_Olympia
+git checkout master_Olympia
+
+
+git clone --depth=1 --branch DEV_Olympia --single-branch https://github.iqa.smfl.co.jp/Org-SecondWebApp/secondwebapp.git
+
+
+
+
+
+
+git checkout DEV_Olympia 
+git checkout STG_Olympia 
+
+２．ブランチ切替
+git checkout STG_Olympia
+
+STG_Olympia
+DEV_Olympia
+master_Olympia
+
+
+■問題
+１．解決 git SSL certificate problem: self signed certificate
+git config --global http.sslVerify false
+
+
+cfa2958e
+
+
+
+
+1 GET
+
+git clone https://cpyplgit01.x.smflc.co.jp/YongAZhang/Test.git
+
+git clone -b STG_Olympia
+
+2追加ファイル
+　①メモリへ追加
+　　git add readme.txt
+　　git add -u
+　　git add -A
+　②コメントを付けて、メモリのファイルを一括追加
+　　git commit -m 'readme.txt for add'
+　　git commit -m '#26339'
+　　git push
+　　
+　③ステータス監視
+　　git status
+　④変更箇所確認
+　　git diff readme.txt
+　⑤ログ監視
+　　git log --pretty=oneline
+　⑥復元
+　　git reset --hard HEAD^　　--上1Version
+　　git reset --hard HEAD^^   --上2Version
+　　git reset --hard HEAD~100 --上100Version
+　　git reset --hard 538f490　--特定Version復元
+　⑥Version監視
+　　git reflog
+　⑦git checkout -- file　ローカルファイルをGITから取得，
+	git checkout -- readme.txt 
+
+　⑧ブランチ追加
+　　git checkout -b kobe ’ローカル新規Branch
+　　git branch
+　⑨ブランチ合併
+　　git merge kobe
+　⑨ブランチ削除
+　　git branch -d kobe
+　⑩ブランチ切替
+　　git checkout STG_Olympia
+　⑪Version　同歩 git reflog
+　
+　　git cherry-pick 14da9a9 (COMMIT号　cd046aac)
+
+
+
+
+14da9a9
+
+
+
+
+
+
+
+
+https://cpyplgit01.x.smflc.co.jp/LijunSun/Document-share.git
+
+Yong.A.Zhang@smflc.co.jp
+Win201810@
+
+
+git config --global http.sslVerify false
+
+
+
+
+git config --global user.name 'Yong.A.Zhang@smflc.co.jp'
+git config --global user.email 'Yong.A.Zhang@smflc.co.jp'
+
+
+git clone https://cpyplgit01.x.smflc.co.jp/LijunSun/Document-share.git copy C:\GIT-New
+
+
+http://localhost:9080/second
+

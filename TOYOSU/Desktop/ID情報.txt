@@ -1,0 +1,243 @@
+
+
+・社内ログイン「UN2M006」
+・FXSCストアの注文請処理「T_APLINF、T_CONTACTSETINFO、T_ORDERCTRL、T_ORDER、T_SCRUMDEPSTOREMST、T_TAXMST、T_APLCSTMINF、T_CLSMST、T_ORDERPRPT、T_ORDERINFOHIS、T_ADDRESS_MST、V_FXSTOREORDER」
+・大塚から申込データのチェック「T_APLPRPTINF」
+・GUP画面一覧「T_APLINF、T_APLPRPTINF、T_APLCSTMINF、T_SALESCHEDULEINF、T_ITOMODEMST」
+・MA画面にセールスとISR担当者のメール送信
+・営業支援画面（可決一覧など）「T_APLPRPTINF、T_SALESCHEDULEINF、T_ITOMODEMST、T_WMFAPLINF、V_APLJDGSTATE、V_APLSTATUSCNT、V_APLAGREESEARCH」
+・申込データの集計(Day2.0新規)
+・審査申込 入力内容確認「T_CONTACTMST、」T_CONTACTSETINFO、UN2M006」
+・支払予定実績照会(明細)「UN2M006」
+
+
+
+net use \\fkmdqwsfs02.devad01.smfl.co.jp "1qaz!QAZ" /USER:devad01\wd802713
+net use \\fkmdpwsfs03.ad01.smfl.co.jp "3edc%TGB" /USER:ad01\wd802713
+
+
+王：Hong.Wang@smflc.co.jp   、120000334  10-14   wd802555
+劉：ryuu-ho@smflc.co.jp     、140802914  10-14
+曹：Feng.Cao@smflc.co.jp    、120000727  10-13
+任：Dali.Ren@smflc.co.jp    、120000624  12-14,15-17
+張：Yong.A.Zhang@smflc.co.jp、120000728  10-13   CAP-DTXDLH2  問い合わせ調査、対応　　スキーマ：wd802713　　インスタンス：PRDSCD　　　使用ID：120000728
+
+
+
+本番切替作業
+
+SCD／COVSCD
+SCD／PRDSCD_APPS_SRV
+
+SCDPT001、SCDPM001
+
+
+
+
+
+
+2020/02/2
+
+
+C005.jsp
+A018.jsp
+
+
+
+SSGXXG000 メールを「Kimiya.Matoda@smflc.co.jp」に補正
+その以外は削除フラグ＝１に設定
+
+
+http://hq.sinajs.cn/list=sh601003,sh601001,sh601002
+
+
+私有 IPv4:172.31.38.138
+
+内部 DNS 主机名:ip-172-31-38-138.ap-northeast-1.compute.internal
+
+
+公有 IP 地址:13.115.248.150
+外部 DNS 主机名:ec2-13-115-248-150.ap-northeast-1.compute.amazonaws.com
+
+
+japanbear.top
+www.japanbear.top
+
+
+ssoUserId="W802713";
+
+
+japanbear.top.s3-website-ap-northeast-1.amazonaws.com
+
+{
+  "Version": "2012-10-17", 
+  "Statement": [
+         {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::japanbear.top/*"
+         } 
+     ] 
+}
+
+=HYPERLINK("../000_データ投入確認(移行用)/1M.sql","1M.sql")
+
+701290863  SJ01
+
+SSDMCX
+
+https://second.i.smfl.co.jp/second/ 
+
+金属検出機
+
+
+■08月分検証用
+600026834	SJ03
+TestUser: w777777
+Password: Test@1234
+
+
+■ITOシステム用情報
+http://ito.idev.smfl.co.jp:8080/IIPITO/login.seam
+sso： 501792546 李慧影 
+担当者コード　313236　　　355077
+業種： 01101
+
+// ssoUserId="W993210";//999999980 del by cui-h 2019/08/09 for use okta
+
+■検証ユーザ
+　①富士ゼロックス
+　　zhang-fuji@smflc.co.jp　12345678Z
+　②営業支援
+　　zhang-it-egy@smflc.co.jp　12345678Z
+　　Yong.A.Zhang@smfl.co.jp　12345678Z  demo
+　③曹
+　　Feng.Cao-new@smflc.co.jp　12345678a
+　　Feng.Cao@smflc.co.jp　12345678a
+　④注文書：
+　　hui.yang@smflc.co.jp　12345678b
+　　本販コード： 234636283 
+　⑤
+　　Megumi.Ohno@smflc.co.jp　love758e
+　　本販コード： 234578469
+　⑥
+　　it-kcs@smflc.co.jp　12345678Z
+　⑦
+　　Yong.A.Zhang-it@smflc.co.jp　12345678Z
+　　サプライヤ本販コード：234632721 
+　　営業所コード：SJ01
+　　
+　⑧ダイキン
+　https://second-int.idev.smfl.co.jp:10443/second_d/dummy.html
+　ryuu-ho-it-daikin@smflc.co.jp
+　
+　600018959 - SJ01 サプライヤ本社名
+
+
+■最新ソース取得
+https://cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+https://cpyplgit01.x.smflc.co.jp/Org-SecondWebService/second_ws.git
+https://cpyplgit01.x.smflc.co.jp/Org-SecondManagement/second_mst.git
+
+
+$ git clone -b master2 ../server .
+git clone git://git.kernel.org/pub/scm/git/git.git
+
+git clone -b DEV_Olympia https://cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+
+
+
+https://cpyplgit01.x.smflc.co.jp/Org-SecondBatch/secondbatchapp.git
+
+
+git clone --depth=1 --branch DEV_Olympia --single-branch https://HongWang:blue1203@cpyplgit01.x.smflc.co.jp/Org-SecondWebApp/secondwebapp.git
+git clone --depth=1 --branch DEV_Olympia --single-branch https://HongWang:blue1203@cpyplgit01.x.smflc.co.jp/Org-SecondWebService/second_ws.git
+git clone --depth=1 --branch DEV_Olympia --single-branch https://HongWang:blue1203@cpyplgit01.x.smflc.co.jp/Org-SecondManagement/second_mst.git
+
+
+■サーブ配置情報
+--SECONDServiceCR.ear
+cd /opt/IBM/wlp/usr/servers/SCD_D01/apps
+
+-- secondCR.ear
+cd /opt/IBM/wlp/usr/servers/SCD_D01/dropins
+
+--second.log
+cd /apps/s002/log
+scp adm-lcl-120000728@10.238.44.18:/apps/s002/log/second.log /P/120000728/
+
+--messages.log
+cd /var/log/was/SCD_D01
+
+scp adm-lcl-120000727@10.238.44.18:/var/log/was/SCD_D01/messages.log /C/資料 
+tail -r -n 100 /apps/s002/log/second.log
+
+
+ssh adm-lcl-120000728@10.238.44.18
+ssh adm-lcl-120000728@10.238.44.42
+ssh adm-lcl-120000728@10.238.44.79
+ssh adm-lcl-120000728@10.238.44.87
+ssh adm-lcl-120000728@10.238.44.14
+ssh adm-lcl-120000728@10.238.44.16
+ssh adm-lcl-120000728@10.238.44.32
+ssh adm-lcl-120000728@10.238.44.34
+ssh adm-lcl-120000728@10.238.44.77
+ssh adm-lcl-120000728@10.238.44.83
+ssh adm-lcl-120000728@10.238.44.115
+ssh adm-lcl-120000728@10.238.44.117
+ssh adm-lcl-120000728@10.238.44.201
+ssh adm-lcl-120000728@10.238.44.202
+
+
+■満了予定契約POPUP条件
+①GUP_STORE.GUP_STORE_FLAG  = 1    --権限
+②UN1M001.ANKCANUSESHIHARAISYO =1  --ユーザーＭ.契約内容一覧照会
+③UN1M001.ANKUSERGUPFLG =1         --ユーザーＭ.GUP満了TOP表示画面フラグ
+④UN2M003.ANKSECONDRKBN= 3,4,5,6   --サプライヤＭ.ＳＥＣＯＮＤ利用区分
+満了予定契約を取得 sql有数据返回 ，
+
+あなたのシステム利用IDは10115351です。 
+
+
+■ITO－DB接続情報
+ホスト：10.103.25.3
+サービス名：DEVITO_APPS_SRV
+ユーザ：ITOD_ITO/ITO_SIT_17d
+
+サーバー名：fymtdlwas05
+IPアドレス：10.238.44.18 
+アカウント名：adm-lcl-120000728 
+初期パスワード：A46g%Kq&/win2019
+
+
+
+■ユーザID登録 旧ストアコード：SSDMCX
+本社コード： 234599542
+営業所： SJ04 窓口担当者： SSDMCX000/12345678A 参照：本社
+
+営業所： SJ03 窓口担当者： SSDLZY000/12345678Z 参照：営業所
+
+営業所： SJ02 窓口担当者： SSDHTA000/12345678Z 参照：グループ
+
+営業所： SJ05 窓口担当者： SSDQUP000/12345678Z 参照：グループ 
+
+SSDMCX003 12345678Z
+
+
+Yong.A.Zhang-it@smflc.co.jp/12345678Z
+本販コード： 234632721
+
+営業所： SJ01  張ーｓｊ０１窓口担当者 参照:本社
+
+営業所： SJ02  張ーｓｊ０２ー範囲営業所　　参照:営業所
+
+営業所： SJ06  張ーｓｊ０６範囲ーグループ 参照:グルプ
+
+営業所： SJ07  張ーｓｊ０７範囲ーグループ 参照:グルプ 
+
+
+■IT登録ユーザ
+SSCEKY000／12345678B
+ryuu-ho-ipp@smflc.co.jp／12345678l
